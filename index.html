@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping | Credit</title>
+    <!-- for icons files -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- for css files  -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- for gsap file  -->
+    <script src="node_modules/gsap/dist/gsap.js" defer></script>
+    <!-- for javascript file  -->
+    <script src="script.js" defer></script>
+    <!-- google fonts family  -->
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Anton" />
+</head>
+<body>
+    <div class="overlay-full"></div>
+    <header>
+        <div class="container">
+            <div class="logo">step up.</div>
+            <ul>
+                <a href="">
+                    <li class="active">Home</li>
+                </a><a href="">
+                    <li>Sale</li>
+                </a><a href="">
+                    <li>Men</li>
+                </a><a href="">
+                    <li>Women</li>
+                </a><a href="">
+                    <li>Kids</li>
+                </a>
+                <li class="icon--close"><i class="fa-solid fa-xmark"></i></li>
+            </ul>
+            <div class="info">
+                <div class="info--search"><i class="fa-solid fa-magnifying-glass"></i><input type="search" placeholder="Search from here..."></div>
+                <div class="info--shopping">
+                    <div class="cart"><i class="fa-solid fa-cart-shopping"></i><span>1</span></div>
+                    <i class="fa-regular fa-heart"></i>
+                    <input type="file" accept="images/jpeg, images/png, images/jpg" id="profile" value="test">
+                    <label for="profile" class="profile"><img src="images/landing-page.png" alt="profile"></label>
+                </div>
+                <i class="fa-solid fa-bars icon--menu"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="hero">
+        <div class="container">
+            <div class="col col--left">
+                <div class="filter">
+                    <div class="filter--name">Categories</div>
+                    <ul>
+                        <input type="radio" checked value="Shoes" id="Shoes">
+                        <label for="Shoes">Shoes</label> <br>
+                        <input type="radio" id="Boots" value="Boots">
+                        <label for="Boots">Boots</label> <br>
+                        <input type="radio" id="Sandals" value="Sandals">
+                        <label for="Sandals">Sandals</label>
+                    </ul>
+                    <button>load more ></button>
+                </div>
+                <div class="filter">
+                    <div class="filter--name">Price</div>
+                    <ul>
+                        <input type="radio" id="less100" value="less100" checked>
+                        <label for="less100">$50 - $100</label> <br>
+                        <input type="radio" id="less200" value="less200">
+                        <label for="less200">$100 - $200</label> <br>
+                        <input type="radio" id="less250" value="less250">
+                        <label for="less250">$200 - $250</label> <br>
+                        <input type="radio" id="over250" value="over250">
+                        <label for="over250">Over $250</label>
+                    </ul>
+                    <div class="manual--choice">
+                        <input type="number" value="0" id="min"> 
+                        <label for="min" id="min">min</label>
+                        <input type="number" value="0" id="max">
+                        <label for="max" id="max">max</label>
+                    </div>
+                </div>
+                <div class="filter">
+                    <div class="filter--name">Color</div>
+                    <ul>
+                        <input type="radio" id="Black" value="Black" checked>
+                        <label for="Black">Black</label> <br>
+                        <input type="radio" id="White" value="White">
+                        <label for="White">White</label> <br>
+                        <input type="radio" id="Red" value="Red">
+                        <label for="Red">Red</label> <br>
+                    </ul>
+                    <button>Load more ></button>
+                </div>
+            </div>
+            <div class="col col--right">
+                <div class="row">
+                    <div class="content">
+                        <h1>find your style here</h1>
+                        <h4>#new summer collection 2024</h4>
+                        <p>Welcome to our online shop. Check our latest and trending products! Get 40% off on summer collection On sale from May 2024. Grab it fast!</p>
+                    </div>
+                    <div class="landing-page">
+                        <img src="images/landing-page.png" alt="">
+                    </div>
+                </div>
+                <div class="products--recommended">
+                    <div class="title">
+                        <h5>Recommended</h5>
+                        <span>View all ></span>
+                    </div>
+                    <ul class="filter--brands">
+                        <li><svg class="active" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" id="IconChangeColor" height="30" width="30"><title>New Balance</title><path d="M12.169 10.306l1.111-1.937 3.774-.242.132-.236-3.488-.242.82-1.414h6.47c1.99 0 3.46.715 2.887 2.8-.17.638-.979 2.233-3.356 2.899.507.06 1.76.616 1.54 2.057-.384 2.558-3.69 3.774-5.533 3.774l-7.641.006-.38-1.48 4.005-.28.137-.237-4.346-.264-.467-1.755 6.178-.363.137-.231-11.096-.693.534-.925 11.948-.775.138-.231-3.504-.231m5 .385l1.1-.006c.738-.005 1.502-.34 1.783-1.018.259-.632-.088-1.171-.55-1.166h-1.067l-1.266 2.19zm-1.27 2.195l-1.326 2.305h1.265c.589 0 1.64-.292 1.964-1.128.302-.781-.253-1.177-.638-1.177h-1.266zM6.26 16.445l-.77 1.315L0 17.77l.534-.923 5.726-.402zm.385-10.216l4.417.006.336 1.248-5.276-.33.523-.924zm5 2.245l.484 1.832-7.542-.495.528-.92 6.53-.417zm-3.84 5.281l-.957 1.661-5.32-.302.534-.924 5.743-.435z" id="mainIconPathAttribute"></path></svg><span>New Balance</span></li>
+                        <li><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="30" height="30"><title>Puma</title><path d="M23.845 3.008c-.417-.533-1.146-.106-1.467.08-2.284 1.346-2.621 3.716-3.417 5.077-.626 1.09-1.652 1.89-2.58 1.952-.686.049-1.43-.084-2.168-.405-1.807-.781-2.78-1.792-3.017-1.97-.487-.37-4.23-4.015-7.28-4.164 0 0-.372-.75-.465-.763-.222-.025-.45.451-.616.501-.15.053-.413-.512-.565-.487-.153.02-.302.586-.6.877-.22.213-.486.2-.637.463-.052.096-.034.265-.093.42-.127.32-.551.354-.555.697 0 .381.357.454.669.72.248.212.265.362.554.461.258.088.632-.187.964-.088.277.081.543.14.602.423.054.256 0 .658-.34.613-.112-.015-.598-.174-1.198-.11-.725.077-1.553.309-1.634 1.11-.041.447.514.97 1.055.866.371-.071.196-.506.399-.716.267-.27 1.772.944 3.172.944.593 0 1.031-.15 1.467-.605.04-.029.093-.102.155-.11a.632.632 0 01.195.088c1.131.897 1.984 2.7 6.13 2.721.582.007 1.25.279 1.796.777.48.433.764 1.125 1.037 1.825.418 1.053 1.161 2.069 2.292 3.203.06.068.99.78 1.06.833.012.01.084.167.053.255-.02.69-.123 2.67 1.365 2.753.366.02.275-.231.275-.41-.005-.341-.065-.685.113-1.04.253-.478-.526-.709-.509-1.756.019-.784-.645-.651-.984-1.25-.19-.343-.368-.532-.35-.946.073-2.38-.517-3.948-.805-4.327-.227-.294-.423-.403-.207-.54 1.24-.815 1.525-1.574 1.525-1.574.66-1.541 1.256-2.945 2.075-3.57.166-.12.589-.44.852-.56.763-.362 1.173-.578 1.388-.788.356-.337.635-1.053.294-1.48z"/></svg><span>Puma</span></li>
+                        <li><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" id="IconChangeColor" height="30" width="30"><title>Adidas</title><path d="M11.936 17.952c0-.644.517-1.16 1.162-1.16.644 0 1.16.516 1.16 1.16a1.157 1.157 0 01-1.16 1.161 1.157 1.157 0 01-1.162-1.16m4.724 0c0-.645.517-1.162 1.161-1.162s1.161.517 1.161 1.161-.517 1.161-1.16 1.161a1.157 1.157 0 01-1.162-1.16m-10.95 0c0-.645.517-1.162 1.161-1.162s1.16.517 1.16 1.161-.516 1.161-1.16 1.161a1.157 1.157 0 01-1.161-1.16m-4.724 0c0-.645.517-1.162 1.161-1.162s1.161.517 1.161 1.161a1.157 1.157 0 01-1.161 1.161 1.157 1.157 0 01-1.16-1.16m9.55-2.052h-1.01v4.063h1.01v-4.063zM3.3 19.964h1.01v-4.063H3.3v.326a2.087 2.087 0 00-1.2-.374c-1.162 0-2.1.938-2.1 2.1 0 1.168.938 2.099 2.1 2.099.445 0 .858-.135 1.2-.374v.286zm15.674 0h1.01v-4.063h-1.01v.326a2.087 2.087 0 00-1.2-.374c-1.162 0-2.1.938-2.1 2.1a2.092 2.092 0 002.1 2.099c.445 0 .858-.135 1.2-.374v.286zm1.384-1.32c.032.82.732 1.4 1.9 1.4.955 0 1.742-.414 1.742-1.328 0-.636-.358-1.01-1.185-1.17l-.644-.126c-.414-.08-.7-.16-.7-.406 0-.27.278-.39.628-.39.51 0 .716.255.732.557h1.018c-.056-.795-.692-1.328-1.718-1.328-1.057 0-1.686.58-1.686 1.336 0 .922.748 1.073 1.392 1.193l.533.095c.382.072.549.183.549.406 0 .199-.191.397-.645.397-.66 0-.874-.342-.882-.636h-1.034zM8.024 14.517v1.71a2.087 2.087 0 00-1.2-.374c-1.162 0-2.1.938-2.1 2.1 0 1.168.938 2.099 2.1 2.099.444 0 .858-.135 1.2-.374v.286h1.01v-5.447h-1.01zm6.226 0v1.71a2.087 2.087 0 00-1.2-.374c-1.161 0-2.1.938-2.1 2.1a2.092 2.092 0 002.1 2.099c.445 0 .858-.135 1.2-.374v.286h1.01v-5.447h-1.01zm-11.626-1.2l.684 1.2h4.716l-1.869-3.229-3.53 2.028zm7.913 2.21v-1.01h3.713l-3.96-6.855L6.751 9.69l2.776 4.827v1.01h1.01zm5.217-1.01h4.723L14.37 3.948l-3.531 2.036 4.915 8.533z" id="mainIconPathAttribute"></path></svg><span>Adidas</span></li>
+                        <li><svg style="color: rgb(0, 0, 0);" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-behance" viewBox="0 0 16 16"> <path d="M4.654 3c.461 0 .887.035 1.278.14.39.07.711.216.996.391.286.176.497.426.641.747.14.32.216.711.216 1.137 0 .496-.106.922-.356 1.242-.215.32-.566.606-.997.817.606.176 1.067.496 1.348.922.281.426.461.957.461 1.563 0 .496-.105.922-.285 1.278a2.317 2.317 0 0 1-.782.887c-.32.215-.711.39-1.137.496a5.329 5.329 0 0 1-1.278.176L0 12.803V3h4.654zm-.285 3.978c.39 0 .71-.105.957-.285.246-.18.355-.497.355-.887 0-.216-.035-.426-.105-.567a.981.981 0 0 0-.32-.355 1.84 1.84 0 0 0-.461-.176c-.176-.035-.356-.035-.567-.035H2.17v2.31c0-.005 2.2-.005 2.2-.005zm.105 4.193c.215 0 .426-.035.606-.07.176-.035.356-.106.496-.216s.25-.215.356-.39c.07-.176.14-.391.14-.641 0-.496-.14-.852-.426-1.102-.285-.215-.676-.32-1.137-.32H2.17v2.734h2.305v.005zm6.858-.035c.286.285.711.426 1.278.426.39 0 .746-.106 1.032-.286.285-.215.46-.426.53-.64h1.74c-.286.851-.712 1.457-1.278 1.848-.566.355-1.243.566-2.06.566a4.135 4.135 0 0 1-1.527-.285 2.827 2.827 0 0 1-1.137-.782 2.851 2.851 0 0 1-.712-1.172c-.175-.461-.25-.957-.25-1.528 0-.531.07-1.032.25-1.493.18-.46.426-.852.747-1.207.32-.32.711-.606 1.137-.782a4.018 4.018 0 0 1 1.493-.285c.606 0 1.137.105 1.598.355.46.25.817.532 1.102.958.285.39.496.851.641 1.348.07.496.105.996.07 1.563h-5.15c0 .58.21 1.11.496 1.396zm2.24-3.732c-.25-.25-.642-.391-1.103-.391-.32 0-.566.07-.781.176-.215.105-.356.25-.496.39a.957.957 0 0 0-.25.497c-.036.175-.07.32-.07.46h3.196c-.07-.526-.25-.882-.497-1.132zm-3.127-3.728h3.978v.957h-3.978v-.957z" fill="#000000"></path> </svg><span>Vans</span></li>
+                        <li><svg style="color: rgb(0, 0, 0);" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-currency-bitcoin" viewBox="0 0 16 16"> <path d="M5.5 13v1.25c0 .138.112.25.25.25h1a.25.25 0 0 0 .25-.25V13h.5v1.25c0 .138.112.25.25.25h1a.25.25 0 0 0 .25-.25V13h.084c1.992 0 3.416-1.033 3.416-2.82 0-1.502-1.007-2.323-2.186-2.44v-.088c.97-.242 1.683-.974 1.683-2.19C11.997 3.93 10.847 3 9.092 3H9V1.75a.25.25 0 0 0-.25-.25h-1a.25.25 0 0 0-.25.25V3h-.573V1.75a.25.25 0 0 0-.25-.25H5.75a.25.25 0 0 0-.25.25V3l-1.998.011a.25.25 0 0 0-.25.25v.989c0 .137.11.25.248.25l.755-.005a.75.75 0 0 1 .745.75v5.505a.75.75 0 0 1-.75.75l-.748.011a.25.25 0 0 0-.25.25v1c0 .138.112.25.25.25L5.5 13zm1.427-8.513h1.719c.906 0 1.438.498 1.438 1.312 0 .871-.575 1.362-1.877 1.362h-1.28V4.487zm0 4.051h1.84c1.137 0 1.756.58 1.756 1.524 0 .953-.626 1.45-2.158 1.45H6.927V8.539z" fill="#000000"></path> </svg><span>Reebak</span></li>
+                        <li><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Nike</title><path d="M24 7.8L6.442 15.276c-1.456.616-2.679.925-3.668.925-1.12 0-1.933-.392-2.437-1.177-.317-.504-.41-1.143-.28-1.918.13-.775.476-1.6 1.036-2.478.467-.71 1.232-1.643 2.297-2.8a6.122 6.122 0 00-.784 1.848c-.28 1.195-.028 2.072.756 2.632.373.261.886.392 1.54.392.522 0 1.11-.084 1.764-.252L24 7.8z"/></svg><span>Nike</span></li>
+                    </ul>
+                </div>
+
+                <div class="products">
+                    <div class="product">
+                        <div class="product--image"><img src="images/landing-page.png" alt=""></div>
+                        <div class="product--content">
+                            <div class="product--name">Nike Air Force 1 "Under construction"</div>
+                            <div class="product--price">
+                                <div class="price">$195.55</div>
+                                <div class="toBuy">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product--image"><img src="images/product2.JPG" alt=""></div>
+                        <div class="product--content">
+                            <div class="product--name">Nike Air Force 1 "Under construction"</div>
+                            <div class="product--price">
+                                <div class="price">$195.55</div>
+                                <div class="toBuy">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product--image"><img src="images/product3.JPG" alt=""></div>
+                        <div class="product--content">
+                            <div class="product--name">Nike Air Force 1 "Under construction"</div>
+                            <div class="product--price">
+                                <div class="price">$195.55</div>
+                                <div class="toBuy">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product--image"><img src="images/landing-page.png" alt=""></div>
+                        <div class="product--content">
+                            <div class="product--name">Nike Air Force 1 "Under construction"</div>
+                            <div class="product--price">
+                                <div class="price">$195.55</div>
+                                <div class="toBuy">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product--image"><img src="images/landing-page.png" alt=""></div>
+                        <div class="product--content">
+                            <div class="product--name">Nike Air Force 1 "Under construction"</div>
+                            <div class="product--price">
+                                <div class="price">$195.55</div>
+                                <div class="toBuy">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </div>
+
+    
+    
+</body>
+</html>

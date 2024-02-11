@@ -1,0 +1,4 @@
+__white 
+__bg-clr C1E0D1
+__hover-clicked CEEE4F
+__font-black 222222
